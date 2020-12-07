@@ -13,5 +13,7 @@ pipeline {
 }
 
 def getTerraformPath(){
-  return tool name: 'aws-terraform', type: 'terraform'
+  def tfPath = tool name: 'aws-terraform', type: 'terraform'
+
+  return tfPath
 }
